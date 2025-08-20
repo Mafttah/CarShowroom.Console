@@ -13,5 +13,6 @@ namespace CarShowroom.Console.Models
         public string Renk { get; set; }
         public string UretimYeri { get; set; }
         public int Yil { get; set; }
+        public decimal AmountOfMoney { get; set; }
     }
 }

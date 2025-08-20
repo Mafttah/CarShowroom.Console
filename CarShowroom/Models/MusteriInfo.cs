@@ -15,5 +15,6 @@ namespace CarShowroom.Console.Models
         public string Country { get; set; }
         public string PostCode { get; set; }
         public long PhoneNo { get; set; }
+        public decimal Budget { get; set; }
     }
 }

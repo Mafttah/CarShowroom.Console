@@ -14,5 +14,6 @@ namespace CarShowroom.Console.Models
         public string UretimYeri { get; set; }
         public int Yil { get; set; }
         public double SarjSuresi { get; set; }
+        public decimal AmountOfMoney { get; set; }
     }
 }
