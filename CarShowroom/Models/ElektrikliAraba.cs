@@ -6,14 +6,8 @@ using System.Threading.Tasks;
 
 namespace CarShowroom.Console.Models
 {
-    public class ElektrikliAraba
+    public class ElektrikliAraba : Araba
     {
-        public string Marka { get; set; }
-        public string Model { get; set; }
-        public string Renk { get; set; }
-        public string UretimYeri { get; set; }
-        public int Yil { get; set; }
         public double SarjSuresi { get; set; }
-        public decimal AmountOfMoney { get; set; }
     }
 }

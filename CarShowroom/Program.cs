@@ -203,7 +203,7 @@ var Araba20 = new ElektrikliAraba()
     AmountOfMoney = 48000000
 };
 
-var Person1Info = new MusteriInfo()
+var Person0Info = new MusteriInfo()
 {
     Name = "Zara",
     Surname = "Kansaktor",
@@ -214,7 +214,7 @@ var Person1Info = new MusteriInfo()
     Budget = 55000000
 };
 
-var Person2Info = new MusteriInfo()
+var Person1Info = new MusteriInfo()
 {
     Name = "Oliwer",
     Surname = "William",
@@ -225,7 +225,7 @@ var Person2Info = new MusteriInfo()
     Budget = 70000000
 };
 
-var Person3Info = new MusteriInfo()
+var Person2Info = new MusteriInfo()
 {
     Name = "Ahmet",
     Surname = "Fastrack",
@@ -236,7 +236,7 @@ var Person3Info = new MusteriInfo()
     Budget = 50000000
 };
 
-var Person4Info = new MusteriInfo()
+var Person3Info = new MusteriInfo()
 {
     Name = "Celine",
     Surname = "Gastro",
@@ -247,7 +247,7 @@ var Person4Info = new MusteriInfo()
     Budget = 45000000
 };
 
-var Person5Info = new MusteriInfo()
+var Person4Info = new MusteriInfo()
 {
     Name = "Alex",
     Surname = "Zaftakosh",
@@ -258,11 +258,18 @@ var Person5Info = new MusteriInfo()
     Budget = 60000000
 };
 
-var Budget1 = Person1Info.Budget;
-var Budget2 = Person2Info.Budget;
-var Budget3 = Person3Info.Budget;
-var Budget4 = Person4Info.Budget;
-var Budget5 = Person5Info.Budget;
+
+// Array tanimlama
+decimal [] Budget = {
+    Person0Info.Budget,
+    Person1Info.Budget,
+    Person2Info.Budget,
+    Person3Info.Budget,
+    Person4Info.Budget,
+};
+
+// TODO: Array seklinde yap (Guncellemeleri develop branch i actiktan sonra feature/array-update branch inda yap)
+// TODO: Developtan feature branch a gecmeden once developta fetch ve pull yap)
 var Amountofmoney1 = Araba1.AmountOfMoney;
 var Amountofmoney2 = Araba2.AmountOfMoney;
 var Amountofmoney3 = Araba3.AmountOfMoney;
@@ -273,6 +280,7 @@ var Amountofmoney7 = Araba7.AmountOfMoney;
 var Amountofmoney8 = Araba8.AmountOfMoney;
 var Amountofmoney9 = Araba9.AmountOfMoney;
 var Amountofmoney10 = Araba10.AmountOfMoney;
+
 var Amountofmoney11 = Araba11.AmountOfMoney;
 var Amountofmoney12 = Araba12.AmountOfMoney;
 var Amountofmoney13 = Araba13.AmountOfMoney;
@@ -292,7 +300,7 @@ Console.WriteLine("Musteri1: Merhaba, ben araba almak istiyorum. Sizde hangi ara
 
 Console.WriteLine("Calisan: Bizde 2 cesit araba turu var: Elektrikli ve Benzinli. Siz ne tur bakiyorsunuz ?\n");
 
-Console.WriteLine($"Musteri1: Benim butcem o kadar fazla degil. Benim butcem: {Budget1}\n");
+Console.WriteLine($"Musteri1: Benim butcem o kadar fazla degil. Benim butcem: {Budget[0]}\n");
 
 Console.WriteLine($"Calisan: Oh, harika. Bunu bilmem iyi oldu. Sizin icin en uygun araclar: \n");
 
@@ -323,19 +331,20 @@ Console.WriteLine("Musteri1: O zaman ben pahali olani almak istiyorum.\n");
 Console.WriteLine("Calisan: O zaman Honda'yi aliyorsunuz. Anahatari vermeden once sizden bazi kisisel bilgilerinizi almam lazim.\n");
 
 Console.WriteLine("Musteri1: Tamam. Kagit uzerinde mi yoksa bilgisayarda mi yapacagiz ?\n");
+
 Console.WriteLine("Calisan: Bilgisayar uzerinden.\n");
 
 Console.WriteLine("Calisan: Adiniz ve Soyadinizi soyler misiniz ?\n");
 
-Console.WriteLine($"Musteri1: Adim ve Soyadim: {Person1Info.Name} {Person1Info.Surname}\n");
+Console.WriteLine($"Musteri1: Adim ve Soyadim: {Person0Info.Name} {Person0Info.Surname}\n");
 Console.WriteLine("Calisan: Harika. Simdi yasiniz.");
-Console.WriteLine($"Musteri1: Yasim: {Person1Info.Age}");
+Console.WriteLine($"Musteri1: Yasim: {Person0Info.Age}");
 Console.WriteLine("Calisan: Mukemmel. Dogdugunuz ulke?");
-Console.WriteLine($"Musteri1: Posta kodum: {Person1Info.Country}");
+Console.WriteLine($"Musteri1: Posta kodum: {Person0Info.Country}");
 Console.WriteLine("Calisan: Mukemmel. Simdi, yasadiginiz sehir?");
-Console.WriteLine($"Musteri1: Posta kodum: {Person1Info.City}");
+Console.WriteLine($"Musteri1: Posta kodum: {Person0Info.City}");
 Console.WriteLine("Calisan: Tamam yasadiginiz yerin posta kodu?");
-Console.WriteLine($"Musteri1: Posta kodum: {Person1Info.PostCode}");
+Console.WriteLine($"Musteri1: Posta kodum: {Person0Info.PostCode}");
 Console.WriteLine("Calisan: Tamamdir, tesekkurler. Sekreterlikten arabanin anahtarini alabilirsiniz.");
 Console.WriteLine("Musteri1: Tesekkur ederim. Iyi gunler.");
 
@@ -343,12 +352,12 @@ Console.WriteLine("Musteri1: Tesekkur ederim. Iyi gunler.");
 
 
 
-if (Budget1 > Araba1.AmountOfMoney)
+if (Budget[0] > Araba1.AmountOfMoney)
 {
     Console.WriteLine("Arabayi rahat bir sekilde alabilirsiniz");
 }
 
-else if (Budget1 < Araba1.AmountOfMoney)
+else if (Budget[0] < Araba1.AmountOfMoney)
 {
     Console.WriteLine("Taksitle odeyebilirsiniz.");
 }
