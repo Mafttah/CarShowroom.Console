@@ -366,7 +366,7 @@ Console.WriteLine($"Benzinli olanlar:\n {Araba1.Marka} var ve maliyeti: {Araba1.
 
 Console.WriteLine($"Elektrikli olanlar:\n {Araba16.Marka} var ve maliyeti: {Araba16.AmountOfMoney}\n {Araba17.Marka} var ve maliyeti: {Araba17.AmountOfMoney}\n {Araba18.Marka} var ve maliyeti: {Araba18.AmountOfMoney}\n {Araba20.Marka} var ve maliyeti: {Araba20.AmountOfMoney}");
 
-Console.WriteLine("Musteri1: Muthis. Sececegim araba icin ben beyaz ya da gri renk istiyorum.\n");
+Console.WriteLine("Musteri2: Muthis. Sececegim araba icin ben beyaz ya da gri renk istiyorum.\n");
 
 Console.WriteLine("Calisan: Oh. Elimizde var olanlar bunlar:\n");
 
@@ -374,7 +374,7 @@ Console.WriteLine($"Benzinli olanlar:\n {Araba1.Marka} var ve maliyeti: {Araba1.
 
 Console.WriteLine($"Elektrikli olanlar:\n {Araba17.Marka} var ve maliyeti: {Araba17.AmountOfMoney}\n");
 
-Console.WriteLine("Musteri1: Peki 2012 yillari arasi arabalariniz var mi ?\n");
+Console.WriteLine("Musteri2: Peki 2012 yillari arasi arabalariniz var mi ?\n");
 
 Console.WriteLine("Calisan: Evet var.\n");
 
@@ -382,37 +382,37 @@ Console.WriteLine($"Benzinli olanlar:\n {Araba1.Marka} var ve maliyeti: {Araba1.
 
 Console.WriteLine($"Elektrikli olanlardan maalesef elimizde yok.\n");
 
-Console.WriteLine($"Musteri1: Sorun degil. Sanirim 2 secenegim kaldi. {Araba1.Marka} ve {Araba10.Marka}. \n");
+Console.WriteLine($"Musteri2: Sorun degil. Sanirim 2 secenegim kaldi. {Araba1.Marka} ve {Araba10.Marka}. \n");
 
 Console.WriteLine("Calisan: Evet.\n");
 
-Console.WriteLine("Musteri1: O zaman ben pahali olani almak istiyorum.\n");
+Console.WriteLine("Musteri2: O zaman ben pahali olani almak istiyorum.\n");
 
-Console.WriteLine($"Calisan: O zaman {Araba1.Marka} yi aliyorsunuz. Anahatari vermeden once sizden bazi kisisel bilgilerinizi almam lazim.\n");
+Console.WriteLine($"Calisan: O zaman {Araba1.Marka} yi aliyorsunuz. Anahatari vermeden once sizden bazi kisisel bilgilerinizi almam lazim\n");
 
-Console.WriteLine("Musteri1: Tamam. Kagit uzerinde mi yoksa bilgisayarda mi yapacagiz ?\n");
+Console.WriteLine("Musteri2: Tamam. Kagit uzerinde mi yoksa bilgisayarda mi yapacagiz ?\n");
 
 Console.WriteLine("Calisan: Bilgisayar uzerinden.\n");
 
 Console.WriteLine("Calisan: Adiniz ve Soyadinizi soyler misiniz ?\n");
 
-Console.WriteLine($"Musteri1: Adim ve Soyadim: {Person1Info.Name} {Person1Info.Surname}\n");
+Console.WriteLine($"Musteri2: Adim ve Soyadim: {Person1Info.Name} {Person1Info.Surname}\n");
 
 Console.WriteLine("Calisan: Harika. Simdi yasiniz.\n");
 
-Console.WriteLine($"Musteri1: Yasim: {Person1Info.Age}\n");
+Console.WriteLine($"Musteri2: Yasim: {Person1Info.Age}\n");
 
 Console.WriteLine("Calisan: Mukemmel. Dogdugunuz ulke?\n");
 
-Console.WriteLine($"Musteri1: Posta kodum: {Person1Info.Country}\n");
+Console.WriteLine($"Musteri2: Posta kodum: {Person1Info.Country}\n");
 
 Console.WriteLine("Calisan: Mukemmel. Simdi, yasadiginiz sehir?\n");
 
-Console.WriteLine($"Musteri1: Posta kodum: {Person1Info.City}\n");
+Console.WriteLine($"Musteri2: Posta kodum: {Person1Info.City}\n");
 
 Console.WriteLine("Calisan: Tamam yasadiginiz yerin posta kodu?\n");
 
-Console.WriteLine($"Musteri1: Posta kodum: {Person1Info.PostCode}\n");
+Console.WriteLine($"Musteri2: Posta kodum: {Person1Info.PostCode}\n");
 
 Console.WriteLine("Calisan: Tamamdir, tesekkurler. Sekreterlikten arabanin anahtarini alabilirsiniz.\n");
 
